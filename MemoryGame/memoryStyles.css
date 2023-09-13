@@ -1,7 +1,29 @@
+#game {
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+  margin-top: 20px;
+}
+
 #game div {
-    border: 1px solid black;
-    width: 15%;
-    height: 200px;
-    margin: 10px;
-    display: inline-block;
-  }
+  border: 1px solid black;
+  width: 15%;
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+}
+
+body {
+  background-color: cadetblue;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff6b6b;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
