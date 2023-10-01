@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box; 
+}
+
+
+body {
+  background: linear-gradient(45deg, blueviolet, seagreen);
+}
+
+
+input {
+  font-family: 'Kalam', cursive;
+}
+
+.search-container { 
+  position:relative;
+  top:50%;
+  left:50%;
+}
+
+.search-container input,
+.search-container .suggestions {
+  opacity: 0.5;
+}
+.search-container input {
+  opacity: 0.9;
+}
+.search-container .suggestions {
+  opacity: 0.9;
+}
+
+ul li {
+  list-style-type: none;
+  font-family: 'Kalam', cursive;
+}
+ul li:hover {
+  color:burlywood; 
+  cursor:pointer;
+}
+
