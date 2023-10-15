@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Submit Movie</h1>
+    <form>
+        <input type="text" placeholder="Title" id="Title">
+        <input type="text" placeholder="Rating" id="Rating">
+        <input type="submit">
+    </form>
+    <h2>Movies</h2>
+    <ul>
+
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function(){
+            $('form').on('submit', function(event){
+                event.preventDefault();
+                let titleInput = $('#Title').val();
+                let ratingInput = $('#Rating').val();
+                const listItem = $("<li>");
+                $('ul').append($("<li>",{text: titleInput + " " + ratingInput}));
+                $('ul').append($("<button class='movieDelete'>Delete</button>"));
+            });
+            $('ul').on('click','button.movieDelete', function(){
+                $(this).closest('li').remove();
+            });
+        });
+    </script>
+</body>
+</html>
